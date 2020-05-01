@@ -1,19 +1,21 @@
 # Go Barber
-A proposta da aplicação goBarber tem como objetivo acelerar e otimizar o processo de marcação em barbeiros de um jeito simples, criativo e dinâmico.
+The proposal of the goBarber application aims to accelerate and optimize the appointment process in the barbershops with a simple, creative and dynamic way.
 
-## Desenvolvido com
+## Built with
 - Node JS
 - Express
 - Typescript
 - PostgreeSQL
 
-## No estado atual da aplicação podes
-- Listar todos os agendamentos;
-- Criar novos agendamentos;
-- Criar um utilizador 
-- Alterar o avatar do utilizador.
-
-## Como iniciar
+## Getting Started
 ```
 Yarn install
 ```
+
+## In the current state of the application you can
+- List all appointments;
+- Create new appointments; 
+- Create new user; 
+- Update user's avatar; 
+
+
