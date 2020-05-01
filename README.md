@@ -15,5 +15,5 @@ A proposta da aplicação goBarber tem como objetivo acelerar e otimizar o proce
 
 ## Como iniciar
 ```
-Yarn add modules
+Yarn install
 ```
