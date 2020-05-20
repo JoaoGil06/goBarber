@@ -5,9 +5,10 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
   ManyToOne,
-  JoinColumn } from 'typeorm'
+  JoinColumn,
+} from 'typeorm';
 
-import User from './User'
+import User from './User';
 
 @Entity('appointments')
 class Appointment {
@@ -31,7 +32,6 @@ class Appointment {
 
   @UpdateDateColumn()
   updated_at: Date;
-
 }
 
-export default Appointment
+export default Appointment;
