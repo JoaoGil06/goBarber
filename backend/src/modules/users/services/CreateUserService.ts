@@ -1,11 +1,10 @@
-import User from '../infra/typeorm/entities/User';
-import {injectable, inject} from 'tsyringe';
+import User from '@modules/users/infra/typeorm/entities/User';
+import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
-import IUsersRepository from '../repositories/IUsersRepository';
+import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 
 import IHashProvider from '../providers/HashProvider/models/IHashProvider';
-
 
 interface IRequest {
   name: string;
@@ -15,18 +14,15 @@ interface IRequest {
 
 @injectable()
 class CreateUserService {
-
   constructor(
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
 
     @inject('HashProvider')
-    private hashProvider: IHashProvider
-    ) {}
+    private hashProvider: IHashProvider,
+  ) {}
 
-
-  async execute({ name, email, password }: IRequest): Promise<User> {
-
+  public async execute({ name, email, password }: IRequest): Promise<User> {
     // Procurar utilizador na bd onde o email seja igual ao email recebido
     const checkUsersExists = await this.usersRepository.findByEmail(email);
 

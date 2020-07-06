@@ -1,7 +1,6 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-
 import CreateUserService from '@modules/users/services/CreateUserService';
 
 export default class UsersController {
@@ -15,6 +14,7 @@ export default class UsersController {
       email,
       password,
     });
+
     // Apagar o password apenas como resposta na route
     delete user.password;
 
