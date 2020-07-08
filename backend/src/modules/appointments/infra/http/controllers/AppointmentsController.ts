@@ -10,6 +10,7 @@ export default class AppointmentsController {
      * Provider -> Nome do barbeiro
      * Date -> Data do agendamento
      */
+    const user_id = request.user.id;
     const { provider_id, date } = request.body;
 
     // ParseISO é converter a data que recebemos de string para date
@@ -20,6 +21,7 @@ export default class AppointmentsController {
 
     const appointment = await createAppointment.execute({
       provider_id,
+      user_id,
       date: parsedDate,
     });
 

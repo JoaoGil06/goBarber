@@ -15,56 +15,67 @@ describe('ListProviderMonthAvailability', () => {
   it('should be able to list the available month from provider', async () => {
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 8, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 9, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 10, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 11, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 12, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 13, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 14, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 15, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 16, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 17, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 24, 17, 0, 0),
     });
 

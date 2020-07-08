@@ -15,11 +15,13 @@ describe('ListProviderDayAvailability', () => {
   it('should be able to list the available day from provider', async () => {
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 14, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: '86545185-67da-4ec8-96df-041bd00f2e0a',
+      user_id: '86545185-67da-4ec8-96df-041bd00f2e0b',
       date: new Date(2020, 4, 20, 15, 0, 0),
     });
 
